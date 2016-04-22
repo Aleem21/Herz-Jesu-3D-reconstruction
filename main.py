@@ -49,11 +49,11 @@ def main():
         # reconstruct(pair_1=data[1], pair_2=data[2], filename='pair_2',
         #             params={'min_disp':864, 'max_disp':1360},
         #             limits={'X':(-10,0), 'Y':(-3,3), 'Z':(5,10)})
-        #
+
         # reconstruct(pair_1=data[2], pair_2=data[3], filename='pair_3',
         #             params={'min_disp':544, 'max_disp':768},
         #             limits={'X':(-50,50), 'Y':(-50,50), 'Z':(-50,50)})
-        #
+
         # reconstruct(pair_1=data[2], pair_2=data[4], filename='pair_4',
         #             params={'min_disp':480, 'max_disp':1184},
         #             limits={'X':(-50,50), 'Y':(-50,50), 'Z':(-50,50)})
@@ -70,17 +70,17 @@ def main():
         #             params={'min_disp':704, 'max_disp':832},
         #             limits={'X':(-11,0), 'Y':(-5,5), 'Z':(10,13)})
 
-        reconstruct(pair_1=data[5], pair_2=data[6], filename='pair_8',
-                    params={'min_disp':496, 'max_disp':720},
-                    limits={'X':(-10,0), 'Y':(-5,5), 'Z':(10,16)})
-        #
+        # reconstruct(pair_1=data[5], pair_2=data[6], filename='pair_8',
+        #             params={'min_disp':496, 'max_disp':720},
+        #             limits={'X':(-10,0), 'Y':(-5,5), 'Z':(10,16)})
+
         # reconstruct(pair_1=data[5], pair_2=data[7], filename='pair_9',
         #             params={'min_disp':1008, 'max_disp':1424},
         #             limits={'X':(-50,50), 'Y':(-50,50), 'Z':(-50,50)})
-        #
-        # reconstruct(pair_1=data[6], pair_2=data[7], filename='pair_10',
-        #             params={'min_disp':544, 'max_disp':704},
-        #             limits={'X':(-50,50), 'Y':(-50,50), 'Z':(-50,50)})
+
+        reconstruct(pair_1=data[6], pair_2=data[7], filename='pair_10',
+                    params={'min_disp':544, 'max_disp':704},
+                    limits={'X':(-6,5), 'Y':(-5,5), 'Z':(12,18)})
 
     except RuntimeError as error:
         print error
