@@ -42,13 +42,13 @@ def main():
                 7: (image_7, camera_7)
             }
 
-        reconstruct(pair_1=data[0], pair_2=data[2], filename='pair_1',
-                    params={'min_disp':976, 'max_disp':1264},
-                    limits={'X':(0,10), 'Y':(-5,3), 'Z':(5,15)})
+        # reconstruct(pair_1=data[0], pair_2=data[2], filename='pair_1',
+        #             params={'min_disp':976, 'max_disp':1264},
+        #             limits={'X':(0,10), 'Y':(-5,3), 'Z':(5,15)})
 
-        # reconstruct(pair_1=data[1], pair_2=data[2], filename='pair_2',
-        #             params={'min_disp':864, 'max_disp':1360},
-        #             limits={'X':(-50,50), 'Y':(-50,50), 'Z':(-50,50)})
+        reconstruct(pair_1=data[1], pair_2=data[2], filename='pair_2',
+                    params={'min_disp':864, 'max_disp':1360},
+                    limits={'X':(-10,0), 'Y':(-3,3), 'Z':(5,10)})
         #
         # reconstruct(pair_1=data[2], pair_2=data[3], filename='pair_3',
         #             params={'min_disp':544, 'max_disp':768},
